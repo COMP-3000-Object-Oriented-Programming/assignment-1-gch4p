@@ -1,7 +1,5 @@
 #include <iostream>
 
-using namespace std; 
-
 int main() {
 	double guess = 0;
 	int input = 0;
