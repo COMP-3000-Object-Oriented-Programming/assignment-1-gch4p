@@ -14,5 +14,4 @@ int main() {
 		guess = (guess + r) / 2;
 	}
 	std::cout << guess;
-	system("pause");
 }
