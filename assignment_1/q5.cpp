@@ -13,6 +13,7 @@ int main() {
 		r = n / guess;
 		guess = (guess + r) / 2;
 	}
-	std::cout << guess;
+	//std::cout << guess;
+	printf("%.2f",guess);
 	return 0;
 }
