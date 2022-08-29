@@ -3,19 +3,23 @@
 using namespace std; 
 
 int main() {
+    int max_cap = 0;
+    int people = 0;
 
-const int acc = 32; 
-int t; 
-int distance; 
+    cout << "Enter the Maximum occupancy for the room. ";
+    cin >> max_cap;
+    cout << max_cap << endl;
 
-cout << "Enter a time in seconds: "<< endl; 
+    cout << "Enter the number of occupants of the room. ";
+    cin >> people;
+    cout << people << endl;
 
-cin>> t; 
+    if (people <= max_cap) {
+        cout << "The number of occupants does not exceed the legal maximum.";
+    } else {
+        cout << "ATTENTION: MAXIMUM OCCPANCY EXCEEDED. THE LAW REQUIRES " << (people-max_cap) << " PERSONS TO LEAVE THE ROOM IMMEDIATELY";
+    }
 
-distance = (acc/2) * (t*t);
-
-cout<< ""<< t << "will fall in" << distance << "feet"; 
-
-return 0; 
+    return 0; 
 }
 
